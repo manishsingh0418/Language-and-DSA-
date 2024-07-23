@@ -27,6 +27,6 @@ int main() {
     cin >> x;
     int a = LastOccurrence(arr, n, x);
     cout << a;
-    return 0;
+    return 0;+
 }
 
