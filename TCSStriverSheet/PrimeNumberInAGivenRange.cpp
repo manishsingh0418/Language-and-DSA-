@@ -16,6 +16,7 @@ int checkPrime(int n)
             count++;
         }
     }
+    
     if(count==1)return 1;
     return 0;
 }
