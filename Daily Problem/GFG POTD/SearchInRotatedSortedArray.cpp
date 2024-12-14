@@ -1,3 +1,10 @@
+//{ Driver Code Starts
+#include <bits/stdc++.h>
+using namespace std;
+
+
+// } Driver Code Ends
+
 class Solution {
   public:
     int solve(vector<int>& arr, int low, int high, int k)
@@ -37,3 +44,29 @@ class Solution {
         
     }
 };
+
+
+
+//{ Driver Code Starts.
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        cin.ignore();
+        vector<int> arr;
+        string input;
+        getline(cin, input);
+        stringstream ss(input);
+        int number;
+        while (ss >> number) {
+            arr.push_back(number);
+        }
+        int key;
+        cin >> key;
+        Solution ob;
+        cout << ob.search(arr, key) << endl;
+        cout << "~" << endl;
+    }
+    return 0;
+}
+// } Driver Code Ends
