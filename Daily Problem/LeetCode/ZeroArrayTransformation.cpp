@@ -14,6 +14,8 @@ class Solution {
                     currVal += diff[i];
                     if (currVal < nums[i]) return false;
                 }
+   
+   
                 return true;
             };
             if (all_of(nums.begin(), nums.end(), [](int x) { return x == 0; })) return 0;
